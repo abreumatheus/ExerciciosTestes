@@ -1,8 +1,10 @@
 import requests
 import re
 
+
 def _get_somente_numeros(dados : str) -> str:
     return re.sub('[^0-9]', '', dados)
+
 
 class ApiCep:
     def execute(self, cep : str) -> dict:
